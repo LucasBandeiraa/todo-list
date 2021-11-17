@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="./todoList.css"> 
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script  src="./js/bootstrap.min.js" > </script>
+    <script src="./todoList.js"></script>
+    <title>Lista</title>
+</head>
+<body>
+    <div class="container">
+    <div class="titulo">
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header"><strong>TAREFAS</strong></div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Digite os Itens das sua tarefas</p>
+    </div>
+    </div>
+    </div>
+    <div class="formulario">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <div class="inline-form">
+                <input type="text" id="iten" class="form-control" placeholder="Digite algo">
+                <button type="button"  class="btn btn-dark" name="ok" id="ok" onclick="apertar()">clicar</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="listaItens">
+        <ul class="list-group" id="lista">
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
